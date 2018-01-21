@@ -1,0 +1,45 @@
+	
+    <tr>
+     <td colspan="2" style="width:100%">
+     <!--<div id="piechart" style="width: 100%; height: 100%;"></div>-->		
+     <TABLE BORDER=1 style="width:100%">
+		<?php
+
+		$queryBuscaFeedback = "SELECT Feedback.texto,Feedback.pontuacao,Feedback.tempo,Feedback.FK_idProfessor,Professor.nome from Feedback INNER JOIN Professor on Feedback.FK_idProfessor = Professor.idProfessor AND Professor.nome=\"".$nome."\"";
+		mysqli_query($db, $queryBuscaFeedback) or die('Erro 4');
+		$resultadoQueryBuscaFeedback = mysqli_query($db, $queryBuscaFeedback);
+		if(mysqli_num_rows($resultadoQueryBuscaFeedback) > 0)
+		{
+		$resultadoBuscaFeedback = mysqli_fetch_array($resultadoQueryBuscaFeedback);
+			do
+			{
+			echo "<tr>\n";
+			echo "<td style=\"width:100%\">\n";
+			echo $resultadoBuscaFeedback['texto']."\n<br>\n<sub>".$resultadoBuscaFeedback['tempo'].".</sub>\n";
+			echo "</td>\n";
+			echo "</tr>\n";
+			}
+		while($resultadoBuscaFeedback = mysqli_fetch_array($resultadoQueryBuscaFeedback));
+		}
+		else
+		{
+		echo "<tr>";
+		echo "<td style=\"width:100%\">\n";		
+		echo "<b><center><font color=\"red\">Nenhum comentário até o momento...</font></center></b>";
+		echo "</td>";
+		echo "</tr>";
+		}
+		?>
+		</TABLE>
+
+
+	    </td>
+	  </tr>
+	  <tr>
+	    <td ><button type="button" onclick="" style="width:100%">&#8810;</button></td>
+	    <td><button type="button" onclick="" style="width:100%">&#8811;</button></td>
+	  </tr>
+	  <tr>
+	    <td colspan="2"><input type="submit" style="width:100%" name="getComentariosBotao" value="Ver estatísticas"></td>
+	  </tr>
+

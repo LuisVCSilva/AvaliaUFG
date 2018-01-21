@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE html [
+  <!ENTITY % newTabDTD SYSTEM "chrome://browser/locale/newTab.dtd">
+  %newTabDTD;
+  <!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
+  %browserDTD;
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">
+  %globalDTD;
+]>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Nova aba</title>
+
+  <link rel="stylesheet" type="text/css" media="all" href="Nova%20aba_arquivos/global.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="Nova%20aba_arquivos/contentSearchUI.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="Nova%20aba_arquivos/newTab_002.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="Nova%20aba_arquivos/newTab.css" />
+</head>
+
+<body dir="ltr">
+  <div id="newtab-customize-overlay"></div>
+
+  <div class="newtab-customize-panel-container">
+    <div id="newtab-customize-panel" orient="vertical">
+        <div id="newtab-customize-panel-anchor"></div>
+        <div id="newtab-customize-panel-inner-wrapper">
+          <div id="newtab-customize-title" class="newtab-customize-panel-item">
+            <label>NOVOS CONTROLES DE ABAS</label>
+          </div>
+
+          <div class="newtab-customize-complex-option">
+            <div id="newtab-customize-classic" class="newtab-customize-panel-superitem newtab-customize-panel-item selectable" selected="true">
+                <label>Mostrar os seus sites preferidos</label>
+            </div>
+            <div id="newtab-customize-enhanced" class="newtab-customize-panel-subitem" selected="true">
+                <label class="checkbox"></label>
+                <label>Incluir sugestão de sites</label>
+            </div>
+          </div>
+          <div id="newtab-customize-blank" class="newtab-customize-panel-item selectable">
+            <label>Mostrar página em branco</label>
+          </div>
+          <div id="newtab-customize-learn" class="newtab-customize-panel-item">
+            <label>Saber mais sobre a nova aba</label>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="newtab-vertical-margin">
+    <div id="newtab-margin-top"></div>
+
+    <div id="newtab-margin-undo-container">
+      <div id="newtab-undo-container" undo-disabled="true">
+        <label id="newtab-undo-label">Miniatura removida.</label>
+        <button id="newtab-undo-button" tabindex="-1" class="newtab-undo-button">Desfazer.</button>
+        <button id="newtab-undo-restore-button" tabindex="-1" class="newtab-undo-button">Restaurar tudo.</button>
+        <button id="newtab-undo-close-button" tabindex="-1" title="Ocultar"></button>
+      </div>
+    </div>
+
+    <div id="newtab-search-container">
+      <div id="newtab-search-form">
+        <div id="newtab-search-icon"></div>
+        <input name="q" id="newtab-search-text" placeholder="Pesquisar" aria-label="Parâmetros da pesquisa" maxlength="256" autocomplete="off" aria-autocomplete="true" aria-controls="searchSuggestionTable" aria-expanded="false" type="text" />
+        <input id="newtab-search-submit" title="Enviar pesquisa" value="▶" type="button" />
+      <table id="searchSuggestionTable" class="contentSearchSuggestionTable" role="presentation" hidden=""><tr class="contentSearchHeaderRow"><td class="contentSearchHeader" id="contentSearchDefaultEngineHeader"><img src="blob:null/89b44ce5-e0a4-42ae-825d-ee085e89391b" />Pesquisar Google</td></tr><tr class="contentSearchSuggestionsContainer"><td class="contentSearchSuggestionsContainer"><table class="contentSearchSuggestionsList" role="listbox"></table></td></tr><table class="contentSearchOneOffsTable contentSearchSuggestionsContainer" role="group"><tr class="contentSearchHeaderRow"><td class="contentSearchHeader" id="contentSearchSearchWithHeader">Pesquisar com:</td></tr></table><button class="contentSearchSettingsButton contentSearchHeaderRow contentSearchHeader" id="contentSearchSettingsButton" aria-selected="false">Alterar configurações de pesquisa</button></table></div>
+    </div>
+
+    <div id="newtab-horizontal-margin">
+      <div class="newtab-side-margin"></div>
+      <div id="newtab-grid" style="width: 1240px; max-width: 1551px; height: 802px; max-height: 802px;">
+        <h1 id="topsites-heading">Seus sites preferidos</h1>
+      <div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><a class="newtab-link" title="https://sigaa.sistemas.ufg.br/" href="https://sigaa.sistemas.ufg.br/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Fsigaa.sistemas.ufg.br%2F&amp;revision=7439&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">sigaa.sistemas.ufg.br</span></a><input title="Fixar este site em sua posição atual" class="newtab-control newtab-control-pin" type="button" /><input title="Remover este site" class="newtab-control newtab-control-block" type="button" /></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><a class="newtab-link" title="Avalia UFG - Beta
+http://localhost/unichan/" href="http://localhost/unichan/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=http%3A%2F%2Flocalhost%2Funichan%2F&amp;revision=3502&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">localhost</span></a><input title="Fixar este site em sua posição atual" class="newtab-control newtab-control-pin" type="button" /><input title="Remover este site" class="newtab-control newtab-control-block" type="button" /></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><a class="newtab-link" title="(1) WhatsApp
+https://web.whatsapp.com/" href="https://web.whatsapp.com/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Fweb.whatsapp.com%2F&amp;revision=7365&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">web.whatsapp.com</span></a><input title="Fixar este site em sua posição atual" class="newtab-control newtab-control-pin" type="button" /><input title="Remover este site" class="newtab-control newtab-control-block" type="button" /></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><a class="newtab-link" title="avaliaufg.tk
+http://avaliaufg.tk/" href="http://avaliaufg.tk/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=http%3A%2F%2Favaliaufg.tk%2F&amp;revision=3790&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">avaliaufg.tk</span></a><input title="Fixar este site em sua posição atual" class="newtab-control newtab-control-pin" type="button" /><input title="Remover este site" class="newtab-control newtab-control-block" type="button" /></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><a class="newtab-link" title="Welcome to XAMPP
+http://127.0.0.1/dashboard/" href="http://127.0.0.1/dashboard/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=http%3A%2F%2F127.0.0.1%2Fdashboard%2F&amp;revision=793&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">127.0.0.1</span></a><input title="Fixar este site em sua posição atual" class="newtab-control newtab-control-pin" type="button" /><input title="Remover este site" class="newtab-control newtab-control-block" type="button" /></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history" pinned="true"><a class="newtab-link" title="YouTube
+https://www.youtube.com/" href="https://www.youtube.com/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Fwww.youtube.com%2F&amp;revision=1959&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">youtube.com</span></a><input title="Desafixar este site" class="newtab-control newtab-control-pin" type="button" /><input title="Remover este site" class="newtab-control newtab-control-block" type="button" /></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><a class="newtab-link" title="Site em desenvolvimento
+http://avaliaufg.000webhostapp.com/" href="http://avaliaufg.000webhostapp.com/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=http%3A%2F%2Favaliaufg.000webhostapp.com%2F&amp;revision=6821&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">avaliaufg.000webhostapp.com</span></a><input title="Fixar este site em sua posição atual" class="newtab-control newtab-control-pin" type="button" /><input title="Remover este site" class="newtab-control newtab-control-block" type="button" /></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><a class="newtab-link" title="Google
+https://www.google.com.br/" href="https://www.google.com.br/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Fwww.google.com.br%2F&amp;revision=993&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">google.com.br</span></a><input title="Fixar este site em sua posição atual" class="newtab-control newtab-control-pin" type="button" /><input title="Remover este site" class="newtab-control newtab-control-block" type="button" /></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><a class="newtab-link" title="http://news.google.com/" href="http://news.google.com/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=http%3A%2F%2Fnews.google.com%2F&amp;revision=6981&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">news.google.com</span></a><input title="Fixar este site em sua posição atual" class="newtab-control newtab-control-pin" type="button" /><input title="Remover este site" class="newtab-control newtab-control-block" type="button" /></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><a class="newtab-link" title="Free Web Hosting with PHP, MySQL and cPanel, No Ads | 2017
+https://www.000webhost.com/" href="https://www.000webhost.com/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Fwww.000webhost.com%2F&amp;revision=6106&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">000webhost.com</span></a><input title="Fixar este site em sua posição atual" class="newtab-control newtab-control-pin" type="button" /><input title="Remover este site" class="newtab-control newtab-control-block" type="button" /></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><a class="newtab-link" title="Tópicos 2 - Prof. Ricardo da Rocha
+http://www.inf.ufg.br/~ricardo/esaas/" href="http://www.inf.ufg.br/~ricardo/esaas/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=http%3A%2F%2Fwww.inf.ufg.br%2F~ricardo%2Fesaas%2F&amp;revision=542&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">inf.ufg.br</span></a><input title="Fixar este site em sua posição atual" class="newtab-control newtab-control-pin" type="button" /><input title="Remover este site" class="newtab-control newtab-control-block" type="button" /></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><a class="newtab-link" title="Entrada (71) - luisviniciuscostasilva@gmail.com - Gmail
+https://mail.google.com/mail/u/0/#inbox" href="https://mail.google.com/mail/u/0/#inbox">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%23inbox&amp;revision=7182&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">mail.google.com</span></a><input title="Fixar este site em sua posição atual" class="newtab-control newtab-control-pin" type="button" /><input title="Remover este site" class="newtab-control newtab-control-block" type="button" /></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><a class="newtab-link" title="Google Tradutor
+https://translate.google.com/" href="https://translate.google.com/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Ftranslate.google.com%2F&amp;revision=2810&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">translate.google.com</span></a><input title="Fixar este site em sua posição atual" class="newtab-control newtab-control-pin" type="button" /><input title="Remover este site" class="newtab-control newtab-control-block" type="button" /></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><a class="newtab-link" title="http://0.0.0.0:3000/candidatos" href="http://0.0.0.0:3000/candidatos">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=http%3A%2F%2F0.0.0.0%3A3000%2Fcandidatos&amp;revision=5893&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">0.0.0.0</span></a><input title="Fixar este site em sua posição atual" class="newtab-control newtab-control-pin" type="button" /><input title="Remover este site" class="newtab-control newtab-control-block" type="button" /></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><a class="newtab-link" title="Sign in · GitLab
+https://gitlab.com/users/sign_in" href="https://gitlab.com/users/sign_in">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Fgitlab.com%2Fusers%2Fsign_in&amp;revision=3430&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">gitlab.com</span></a><input title="Fixar este site em sua posição atual" class="newtab-control newtab-control-pin" type="button" /><input title="Remover este site" class="newtab-control newtab-control-block" type="button" /></div></div></div>
+      <div class="newtab-side-margin"></div>
+    </div>
+
+    <div id="newtab-margin-bottom"></div>
+  </div>
+  <input id="newtab-customize-button" dir="ltr" value="⚙" title="Personalizar a página nova aba" type="button" />
+</body>
+<script type="text/javascript" src="Nova%20aba_arquivos/contentSearchUI.js"></script>
+<script type="text/javascript" src="Nova%20aba_arquivos/newTab.js"></script>
+</html>
