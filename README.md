@@ -11,8 +11,8 @@ Detalhes da Implementação:
  - Possui captcha para evitar bots.
 
 Disponível em:
- - avaliaufg.tk
- - avaliaufg.000webhostapp.com
+ - https://www.avaliaufg.tk
+ - https://www.avaliaufg.000webhostapp.com
 
 É possível visualizar os dados das tabelas do BD através destas Urls: 
  - Professor:  https://avaliaufg.000webhostapp.com/_professor.php 
