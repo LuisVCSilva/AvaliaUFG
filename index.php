@@ -1,5 +1,6 @@
 <?php
 require('db.php');
+<<<<<<< HEAD
 require('funcoes.php');
 ?>
 <!DOCTYPE html>
@@ -18,10 +19,20 @@ Avalia UFG - Beta
       <link rel="stylesheet" href="css/style.css">
 
 
+=======
+?>
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="tema.css">
+<title>
+Unichan - UFG
+</title>
+>>>>>>> 61a607952736b23a1af1be3b7bc4d13c4a5eaf61
 </head>
 
 <body>
 
+<<<<<<< HEAD
   <div class="container" ng-app="myApp" ng-controller="Example">
 	<div class="jumbotron" id="banner">
 		<style type="text/css">
@@ -127,10 +138,31 @@ Avalia UFG - Beta
     location.hash = "#" + hash;
 	}
 
+=======
+
+<div style="width: 500px; margin: 100px auto 0 auto;">
+<form>
+ <br>
+ Pesquisa:
+ <input type="text" name="campo-pesquisa" value="">
+
+ <input type="submit" name="buscaBotao" value="Busca">
+ <br>
+ <br> 
+ <input type="radio" name="tipoPesquisa" value="Professor"> Professor<br>
+ <input type="radio" name="tipoPesquisa" value="Disciplina"> Disciplina<br>
+</form> 
+</div>
+<br>
+
+
+<script type="text/javascript">
+>>>>>>> 61a607952736b23a1af1be3b7bc4d13c4a5eaf61
      function switchElemento (id) {
        	var e = document.getElementById(id);
        	e.style.display = (e.style.display == 'block') ? 'none' : 'block';
      }
+<<<<<<< HEAD
 
     
 	var x = 0;
@@ -309,5 +341,48 @@ echo "\n"
 Copyright &copy; 2017 - Swartz Jr. - Alguns direitos reservados.
 </center>
 <br>
+=======
+</script>
+
+<?php
+
+if(isset($_GET['buscaBotao']))
+{
+$queryBuscaNomes = "SELECT * FROM `".$_GET['tipoPesquisa']."` WHERE nome LIKE \"%".$_GET['campo-pesquisa']."%\" limit 20";
+
+mysqli_query($db, $queryBuscaNomes) or die('Error querying database.');
+
+$resultadoQueryBuscaNomes = mysqli_query($db, $queryBuscaNomes);
+$resultadoBuscaNomes = mysqli_fetch_array($resultadoQueryBuscaNomes);
+
+
+
+echo "<form method=\"post\">\n";
+echo "<table border=2  CELLPADDING=\"10\" CELLSPACING=\"10\">\n";
+while ($resultadoBuscaNomes = mysqli_fetch_array($resultadoQueryBuscaNomes)) {
+ echo "<tr>";
+ 	echo "\n";
+ 	echo " <td>";
+	$nome = $resultadoBuscaNomes['nome'];
+	echo "<a href=\"javascript:switchElemento('detalhes-".$resultadoBuscaNomes['idProfessor']."');\">".$resultadoBuscaNomes['nome']."</a>";
+	
+	echo "</td>\n";
+
+ 	echo "<td>\n";
+	echo "<div id='detalhes-".$resultadoBuscaNomes['idProfessor']."' style=\"display:none;\">";
+        include "PerfilProfessor.php";
+	echo "</div>";
+	echo "  </td>\n";
+ echo "</tr>";
+echo "\n";
+}
+echo "\n";
+echo "</table>\n";
+echo "</form>\n";
+mysqli_close($db);
+}
+echo "\n"
+?>
+>>>>>>> 61a607952736b23a1af1be3b7bc4d13c4a5eaf61
 </body>
 </html>
