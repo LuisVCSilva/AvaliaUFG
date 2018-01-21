@@ -18,4 +18,3 @@ Disponível em:
  - Professor:  https://avaliaufg.000webhostapp.com/_professor.php 
  - Disciplina: https://avaliaufg.000webhostapp.com/_disciplina.php
  - Feedback:   https://avaliaufg.000webhostapp.com/_feedback.php 
-# AvaliaUFG
