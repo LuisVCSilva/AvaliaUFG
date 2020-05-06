@@ -12,8 +12,3 @@ Detalhes da Implementação:
 
 Disponível em:
 - https://avaliaufg.000webhostapp.com
-
-É possível visualizar os dados das tabelas do BD através destas Urls: 
- - Professor:  https://avaliaufg.000webhostapp.com/_professor.php 
- - Disciplina: https://avaliaufg.000webhostapp.com/_disciplina.php
- - Feedback:   https://avaliaufg.000webhostapp.com/_feedback.php 
