@@ -12,3 +12,5 @@ Detalhes da Implementação:
 
 Disponível em:
 - https://avaliaufg.000webhostapp.com
+
+Sim, na pasta BD tem o banco de dados com o nome e disciplinas de todos os professores da ufg (na época). Como conseguir isso é trivial e deixado como exercício ao leitor.
